@@ -1,0 +1,107 @@
+[
+  {
+    "file": "assets/background_success.png",
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alphaRange": null
+  },
+  {
+    "file": "assets/button_share_base.png",
+    "size": [
+      389,
+      126
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/button_home.png",
+    "size": [
+      338,
+      335
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/icon_share.png",
+    "size": [
+      261,
+      274
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/icon_saved.png",
+    "size": [
+      290,
+      289
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/sparkle_gold.png",
+    "size": [
+      224,
+      238
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/frame_artwork.png",
+    "size": [
+      893,
+      866
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/button_continue_base.png",
+    "size": [
+      493,
+      175
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/title_success.png",
+    "size": [
+      537,
+      165
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  }
+]

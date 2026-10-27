@@ -1,0 +1,38 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const {runtime,displayList,press}=require('./cocos-ui-harness.cjs');
+const {p}=runtime(false);
+function touch(id,event='end',cancel=false){
+ const n=p.home.controls.get(id),pos=n.worldPosition;
+ const e={getID:()=>1,getLocation:()=>pos,windowId:0,propagationStopped:false};
+ n.events.get('start')(e);
+ assert.equal(n.scale.x,.96);
+ n.events.get(cancel?'cancel':event)(e);
+ assert.equal(n.scale.x,1);
+}
+assert.ok(p.home.visible);
+const before=p.model.time;for(let i=0;i<100;i++)p.update(.1);
+assert.equal(p.model.time,before);
+assert.ok([...p.layers.values()].every(l=>!l.node.active));
+let list=displayList(p.node);
+assert.equal(list.filter(i=>i.name==='Hero').length,1);
+assert.ok(list.some(i=>i.text==='小猫的花园'));
+assert.ok(!list.some(i=>i.text==='我的作品'));
+assert.ok(!list.some(i=>i.name==='Cell-0:0'));
+fs.mkdirSync('temp/home-ui',{recursive:true});
+fs.writeFileSync('temp/home-ui/home.json',JSON.stringify({width:864,height:1536,items:list}));
+touch('start','end',true);assert.ok(p.home.visible);
+touch('settings');assert.ok(p.home.modal.active);
+const volume=p.model.tuning.volume;touch('volume');assert.equal(p.model.tuning.volume,0);
+touch('volume');assert.equal(p.model.tuning.volume,volume);touch('close');
+touch('start');p.update(0);assert.ok(!p.home.visible);
+assert.ok(p.layers.get('Input').node.active);
+press(p,'auto');for(let i=0;i<300;i++)p.update(1/60);
+const seated=p.picture.totalSeated;
+press(p,'settings');p.update(0);press(p,'home');assert.ok(p.home.visible);
+assert.equal(p.picture.autoEnabled,false);
+const time=p.model.time;for(let i=0;i<300;i++)p.update(.1);
+assert.equal(p.model.time,time);assert.equal(p.picture.totalSeated,seated);
+touch('start');p.update(0);assert.equal(p.picture.totalSeated,seated);
+p.home.show();touch('settings');p.home.clearPresses();touch('close');
+console.log('Home: layered assets, cancel/press, settings volume, start/return, paused simulation and preserved progress passed.');

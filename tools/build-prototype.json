@@ -1,0 +1,11 @@
+{
+  "platform": "web-mobile",
+  "debug": true,
+  "outputName": "web-mobile",
+  "buildPath": "project://build",
+  "startScene": "4b462525-67fa-5060-9267-b02f44f04c60",
+  "scenes": [
+    { "url": "db://assets/scenes/RowPrototype.scene", "uuid": "4b462525-67fa-5060-9267-b02f44f04c60" }
+  ],
+  "packages": { "web-mobile": { "orientation": "portrait", "embedWebDebugger": false } }
+}

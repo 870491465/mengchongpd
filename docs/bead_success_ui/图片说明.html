@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><style>body{max-width:960px;margin:40px auto;font:16px/1.8 sans-serif;color:#234}img{max-width:500px;max-height:550px;background:#eee9df}pre{white-space:pre-wrap;font:inherit}</style><h1>成功结算页素材说明</h1><h2>结算页背景</h2><img src="assets/background_success.png"><p>不含UI的米白浅绿背景，花叶在底部边角；全屏铺满。</p><h2>成功标题</h2><img src="assets/title_success.png"><p>固定“拼好啦！”透明装饰字，重绘版比原图多一层奶油描边。</p><h2>继续按钮底图</h2><img src="assets/button_continue_base.png"><p>透明无字，叠加Label“继续拼豆”。</p><h2>分享按钮底图</h2><img src="assets/button_share_base.png"><p>透明无字，叠加分享图标及Label“分享作品”。</p><h2>返回首页</h2><img src="assets/button_home.png"><p>圆形底座和房子合图，整体点击。</p><h2>分享图标</h2><img src="assets/icon_share.png"><p>三节点分享符号，独立透明PNG。</p><h2>收藏成功图标</h2><img src="assets/icon_saved.png"><p>绿色圆形勾选，仅保存成功后显示。</p><h2>作品装饰框（可选）</h2><img src="assets/frame_artwork.png"><p>中心透明，重绘版边框比定稿厚且颗粒较大；要求贴合定稿时推荐用程序绘制细奶油圆角框，或用重复小方豆组成细边。不要用厚框遮住作品。</p><h2>金色星光</h2><img src="assets/sparkle_gold.png"><p>复用3–4份，轻微缩放淡入淡出，不遮挡作品。</p><pre>## 作品来源必须一致
+
+reference/artwork_example_only.png仅为原图裁切示例，不作为正式关卡完成图。实际结算页显示本局相同矩阵渲染的完整作品或游戏中主图区域的RenderTexture截图，不另换一张更漂亮的小猫。截图时排除当前行数字、枪、飞豆和界面文字，不能把UI一起截进去。
+
+## Cocos布局与文字
+
+建议设计分辨率864×1536，以下为左上原点参考矩形(x,y,w,h)，依据安全区微调，保持作品比例：返回首页(40,48,82,82)；成功标题(170,120,530,135)；关卡名(260,260,344,42)；作品区域(76,325,712,770)；收藏状态(328,1128,220,48)；继续按钮(188,1204,488,126)；分享按钮(270,1360,324,94)。
+
+图层：Background → Artwork → Frame（可选）→ Sparkles → Title → LevelName → SavedStatus → Buttons。作品用同一关卡的行列比例等比适配，禁止为了填满边框拉伸。固定标题可使用title_success；关卡名读取level.name采用普通Label。按钮文案“继续拼豆”“分享作品”和状态“作品已收藏”用Label，不需要每关单做文字图片。
+
+收藏状态必须在持久化保存成功后显示；失败时保留作品并提供重试，不假显示已收藏。继续按钮进下一关，无下一关时回选关或首页。分享按钮由真实用户点击后调用目标平台分享能力，不自动发出消息。返回首页保留本局完成记录。
+
+按钮图默认整体等比缩放；需明显改宽高时再检查九宫格边缘。按下scale0.96、释放回1，触摸范围不少于44设计像素；界面整体位于安全区。PNG保留alpha并按SpriteFrame导入，普通设备/图标可用Linear。星光建议缩放0.9–1.05、透明度缓变，数量少、频率低。
+
+本包不包含字体、音效、Cocos脚本。标题装饰字可替换为普通Label以统一工程字体。图片说明.html支持离线查看；asset_manifest.json记录各图实际尺寸。
+
+## 给Codex
+
+按reference/success_approved.png实现成功页，用assets分层组装，不把整张截图当背景。读取真实关卡名，展示玩家真实完成作品；保存成功再显示收藏勾选；实现继续、分享和返回首页。透明组件是重绘素材，请调整尺寸与定位。frame_artwork为较厚的可选框，优先按定稿绘制细框。验证长名称、作品比例、手机安全区、重复进入结算页不重复保存，以及下一关不存在时的跳转。报告实际验证情况，不宣称未执行的真机测试已通过。
+</pre>

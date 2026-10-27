@@ -1,0 +1,92 @@
+[
+  {
+    "file": "assets/icon_gallery.png",
+    "size": [
+      252,
+      221
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/icon_sprout.png",
+    "size": [
+      313,
+      224
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/button_start_base.png",
+    "size": [
+      473,
+      192
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/button_gallery_base.png",
+    "size": [
+      368,
+      141
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/background_home.png",
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "alphaRange": null
+  },
+  {
+    "file": "assets/hero_cat_beads.png",
+    "size": [
+      725,
+      749
+    ],
+    "mode": "RGB",
+    "alphaRange": null
+  },
+  {
+    "file": "assets/title_logo.png",
+    "size": [
+      503,
+      224
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/button_settings.png",
+    "size": [
+      278,
+      274
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ]
+  }
+]

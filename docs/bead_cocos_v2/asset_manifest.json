@@ -1,0 +1,74 @@
+[
+  {
+    "file": "assets/launcher_empty.png",
+    "size": [
+      417,
+      486
+    ],
+    "alpha": true,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "file": "assets/magazine_empty.png",
+    "size": [
+      342,
+      350
+    ],
+    "alpha": true,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "file": "assets/button_fire.png",
+    "size": [
+      349,
+      344
+    ],
+    "alpha": true,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "file": "assets/button_settings.png",
+    "size": [
+      327,
+      328
+    ],
+    "alpha": true,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "file": "assets/bead_white.png",
+    "size": [
+      281,
+      282
+    ],
+    "alpha": true,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "file": "assets/icon_lock.png",
+    "size": [
+      205,
+      255
+    ],
+    "alpha": true,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  }
+]

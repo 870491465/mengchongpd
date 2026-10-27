@@ -1,0 +1,186 @@
+[
+  {
+    "file": "assets/bead_white.png",
+    "width": 281,
+    "height": 282,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/background_clean.png",
+    "width": 864,
+    "height": 1536,
+    "mode": "RGB",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": null
+  },
+  {
+    "file": "assets/chick_source.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": null
+  },
+  {
+    "file": "assets/gun_body_empty.png",
+    "width": 464,
+    "height": 356,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/chick_grid_ghost.png",
+    "width": 800,
+    "height": 880,
+    "mode": "RGB",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": null
+  },
+  {
+    "file": "assets/queue_slot_empty.png",
+    "width": 299,
+    "height": 309,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/gun_muzzle.png",
+    "width": 266,
+    "height": 209,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/icon_lock.png",
+    "width": 205,
+    "height": 255,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/speed_button_base.png",
+    "width": 387,
+    "height": 122,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/magazine_active_empty.png",
+    "width": 504,
+    "height": 220,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/button_fire.png",
+    "width": 349,
+    "height": 344,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/magazine_queue_empty.png",
+    "width": 193,
+    "height": 362,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/button_settings.png",
+    "width": 327,
+    "height": 328,
+    "mode": "RGBA",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "assets/chick_grid_complete.png",
+    "width": 800,
+    "height": 880,
+    "mode": "RGB",
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "alphaRange": null
+  }
+]
