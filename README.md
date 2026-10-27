@@ -2,6 +2,34 @@
 
 Cocos Creator **3.8.8** 手机竖屏拼豆原型。当前关卡为“小猫的花园”，80×80、6400颗，使用20色色板，支持手动装填与全自动逐排发射。
 
+## 小游戏图片
+
+小游戏展示图或小游戏入口二维码放在 `docs/readme/minigame.png`。
+
+<details>
+<summary>查看小游戏图片</summary>
+
+<p align="center">
+  <img src="docs/readme/minigame.png" alt="萌宠拼豆小游戏图片（待上传）" width="360">
+</p>
+
+</details>
+
+## 个人微信
+
+欢迎交流拼豆玩法与 Cocos Creator 开发。个人微信二维码放在 `docs/readme/wechat.png`。
+
+<details>
+<summary>查看个人微信二维码</summary>
+
+<p align="center">
+  <img src="docs/readme/wechat.png" alt="个人微信二维码（待上传）" width="280">
+</p>
+
+</details>
+
+目前两张图片尚未提供，展示位置已预留。将图片按上述名称上传至仓库后，展开对应区域即可查看，无需再修改图片链接。目录及上传说明见 [README图片说明](docs/readme/README.md)。
+
 ## 运行
 
 1. 使用 Cocos Creator 3.8.8 打开项目根目录，等待资源与脚本导入完成。
